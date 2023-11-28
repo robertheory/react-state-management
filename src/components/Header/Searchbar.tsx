@@ -3,7 +3,11 @@ import { FiSearch } from 'react-icons/fi';
 import { useNavigate } from 'react-router-dom';
 import movies from '../../data/movies.json';
 
-const Searchbar = () => {
+type SearchbarProps = {
+  handleCloseMenu: () => void;
+};
+
+const Searchbar = ({ handleCloseMenu }: SearchbarProps) => {
   const [search, setSearch] = useState('');
 
   const navigate = useNavigate();
@@ -11,6 +15,7 @@ const Searchbar = () => {
   const handleNavigate = (id: number) => {
     navigate(`/movie/${id}`);
     setSearch('');
+    handleCloseMenu();
   };
 
   const handleSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -67,7 +72,7 @@ const Searchbar = () => {
         md:top-8
         md:left-auto
         md:right-auto
-        md:w-56
+        md:w-[180px]
         md:max-h-80
         md:overflow-y-auto
         md:rounded-md

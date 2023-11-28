@@ -6,6 +6,8 @@ import Searchbar from './Searchbar';
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const cartItems = 20;
+
   return (
     <header
       className='
@@ -38,9 +40,36 @@ const Header = () => {
             w-full h-16 flex justify-between items-center
             px-4  text-white gap-4 md:flex-row'
         >
-          <Searchbar />
+          <Searchbar handleCloseMenu={() => setIsMenuOpen(false)} />
 
-          <button>
+          <button
+            className='
+            w-10 h-10 flex justify-center items-center p-2
+            hover:bg-gray-700 rounded-lg
+            active:bg-gray-900
+          '
+          >
+            {cartItems > 0 && (
+              <span
+                className='
+                absolute
+                top-2
+                right-2
+                w-4
+                h-4
+                bg-red-500
+                text-white
+                text-xs
+                flex justify-center items-center
+                rounded-full
+
+                md:right-6
+                '
+              >
+                {cartItems}
+              </span>
+            )}
+
             <FiShoppingCart size={24} />
           </button>
         </div>
