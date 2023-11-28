@@ -1,6 +1,9 @@
 import { FiHeart, FiShoppingCart } from 'react-icons/fi';
+import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { Movie } from '../interfaces';
+import { addToCart } from '../store/cartSlice';
+import { getFavorites, toggleFavorite } from '../store/favoritesSlice';
 
 type MovieCardProps = {
   movie: Movie;
@@ -8,14 +11,24 @@ type MovieCardProps = {
 
 const MovieCard = ({ movie }: MovieCardProps) => {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
+
+  const favorites = useSelector(getFavorites());
+
+  const isFavorite = !!favorites.find((fav) => fav.id === movie.id);
 
   const handleAddToCart = () => {
-    alert('Added to cart...');
+    dispatch(addToCart(movie));
   };
 
   const handleAddToFavorites = () => {
-    alert('Added to favorites...');
+    dispatch(toggleFavorite(movie));
   };
+
+  const price = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+  }).format(movie.price);
 
   return (
     <div
@@ -64,30 +77,14 @@ const MovieCard = ({ movie }: MovieCardProps) => {
       gap-4
       '
       >
-        <button
-          onClick={() => navigate(`/movie/${movie.id}`)}
-          className='
-        w-full
-        text-center
-        text-sm
-        bg-zinc-800
-        text-zinc-400
-        font-bold
-        rounded-md
-        p-2
-        hover:bg-zinc-900
-        hover:text-zinc-500
-      '
-        >
-          More
-        </button>
+        <span className='text-lg font-bold mr-auto'>Price: {price}</span>
 
         <button
           onClick={handleAddToCart}
           className='
             w-fit
             bg-zinc-800
-            text-zinc-400
+            text-white
             font-bold
             rounded-md
             p-2
@@ -100,20 +97,52 @@ const MovieCard = ({ movie }: MovieCardProps) => {
 
         <button
           onClick={handleAddToFavorites}
-          className='
+          className={`
             w-fit
             bg-zinc-800
-            text-zinc-400
+            text-zinc-300
+            
+            font-bold
+            rounded-md
+            p-2
+
+            transition
+            duration-200
+            ease-in-out
+
+            ${isFavorite && 'bg-red-500 '}
+          `}
+        >
+          <FiHeart
+            size={24}
+            className={`
+              transition
+              duration-200
+              ease-in-out
+
+              ${isFavorite && 'text-red-500'}
+            `}
+          />
+        </button>
+      </div>
+
+      <button
+        onClick={() => navigate(`/movie/${movie.id}`)}
+        className='
+            w-full
+            text-center
+            text-sm
+            bg-zinc-800
+            text-white
             font-bold
             rounded-md
             p-2
             hover:bg-zinc-900
             hover:text-zinc-500
-          '
-        >
-          <FiHeart size={24} />
-        </button>
-      </div>
+      '
+      >
+        More
+      </button>
     </div>
   );
 };

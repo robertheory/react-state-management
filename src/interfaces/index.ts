@@ -6,4 +6,10 @@ export interface Movie {
   createdAt: string;
   description: string;
   studio: string;
+  price: number;
+}
+
+export interface CartItem {
+  movie: Movie;
+  quantity: number;
 }

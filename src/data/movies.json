@@ -6,7 +6,8 @@
     "cover": "http://dummyimage.com/300x300.png/5fa2dd/ffffff",
     "createdAt": "05/04/2011",
     "description": "varius ut blandit non interdum in ante vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae duis faucibus accumsan odio curabitur convallis duis consequat dui nec nisi volutpat eleifend donec ut dolor morbi vel lectus in",
-    "studio": "Von Group"
+    "studio": "Von Group",
+    "price": 99.99
   },
   {
     "id": 2,
@@ -15,7 +16,8 @@
     "cover": "http://dummyimage.com/300x300.png/ff4444/ffffff",
     "createdAt": "03/31/2017",
     "description": "pretium iaculis justo in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi",
-    "studio": "Terry-Walker"
+    "studio": "Terry-Walker",
+    "price": 99.99
   },
   {
     "id": 3,
@@ -24,7 +26,8 @@
     "cover": "http://dummyimage.com/300x300.png/ff4444/ffffff",
     "createdAt": "01/10/2016",
     "description": "sed vel enim sit amet nunc viverra dapibus nulla suscipit ligula in lacus curabitur at ipsum ac tellus semper interdum mauris ullamcorper purus sit amet nulla quisque arcu libero rutrum ac lobortis vel dapibus at diam nam",
-    "studio": "Oberbrunner Group"
+    "studio": "Oberbrunner Group",
+    "price": 99.99
   },
   {
     "id": 4,
@@ -33,7 +36,8 @@
     "cover": "http://dummyimage.com/300x300.png/dddddd/000000",
     "createdAt": "09/09/2003",
     "description": "odio in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh in hac habitasse platea dictumst aliquam augue",
-    "studio": "Heaney, Doyle and Bednar"
+    "studio": "Heaney, Doyle and Bednar",
+    "price": 99.99
   },
   {
     "id": 5,
@@ -42,7 +46,8 @@
     "cover": "http://dummyimage.com/300x300.png/cc0000/ffffff",
     "createdAt": "07/04/2001",
     "description": "a odio in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh in hac habitasse platea dictumst aliquam augue quam",
-    "studio": "O'Conner, Halvorson and Cruickshank"
+    "studio": "O'Conner, Halvorson and Cruickshank",
+    "price": 99.99
   },
   {
     "id": 6,
@@ -51,7 +56,8 @@
     "cover": "http://dummyimage.com/300x300.png/ff4444/ffffff",
     "createdAt": "08/16/2015",
     "description": "ante vivamus tortor duis mattis egestas metus aenean fermentum donec ut mauris eget massa tempor convallis nulla neque libero convallis eget eleifend luctus ultricies eu nibh quisque id",
-    "studio": "Tromp, Anderson and Schulist"
+    "studio": "Tromp, Anderson and Schulist",
+    "price": 99.99
   },
   {
     "id": 7,
@@ -60,7 +66,8 @@
     "cover": "http://dummyimage.com/300x300.png/cc0000/ffffff",
     "createdAt": "04/07/2003",
     "description": "ipsum dolor sit amet consectetuer adipiscing elit proin interdum mauris non ligula pellentesque ultrices phasellus id sapien in sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at vulputate vitae nisl aenean lectus pellentesque eget nunc donec quis orci eget",
-    "studio": "Greenfelder and Sons"
+    "studio": "Greenfelder and Sons",
+    "price": 99.99
   },
   {
     "id": 8,
@@ -69,7 +76,8 @@
     "cover": "http://dummyimage.com/300x300.png/5fa2dd/ffffff",
     "createdAt": "08/12/2005",
     "description": "congue etiam justo etiam pretium iaculis justo in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi cras",
-    "studio": "Bednar LLC"
+    "studio": "Bednar LLC",
+    "price": 99.99
   },
   {
     "id": 9,
@@ -78,7 +86,8 @@
     "cover": "http://dummyimage.com/300x300.png/dddddd/000000",
     "createdAt": "11/09/2021",
     "description": "amet consectetuer adipiscing elit proin risus praesent lectus vestibulum quam sapien varius ut blandit non interdum in ante vestibulum ante ipsum primis in faucibus",
-    "studio": "Keeling, Daugherty and Smith"
+    "studio": "Keeling, Daugherty and Smith",
+    "price": 99.99
   },
   {
     "id": 10,
@@ -87,7 +96,8 @@
     "cover": "http://dummyimage.com/300x300.png/5fa2dd/ffffff",
     "createdAt": "06/01/2019",
     "description": "eget congue eget semper rutrum nulla nunc purus phasellus in felis donec semper sapien a libero nam dui proin leo odio porttitor id consequat",
-    "studio": "Bogisich, Bruen and Green"
+    "studio": "Bogisich, Bruen and Green",
+    "price": 99.99
   },
   {
     "id": 11,
@@ -96,7 +106,8 @@
     "cover": "http://dummyimage.com/300x300.png/dddddd/000000",
     "createdAt": "06/06/2001",
     "description": "lectus vestibulum quam sapien varius ut blandit non interdum in ante vestibulum ante ipsum primis in faucibus orci luctus et ultrices",
-    "studio": "Kuhn-Rogahn"
+    "studio": "Kuhn-Rogahn",
+    "price": 99.99
   },
   {
     "id": 12,
@@ -105,7 +116,8 @@
     "cover": "http://dummyimage.com/300x300.png/cc0000/ffffff",
     "createdAt": "06/22/2022",
     "description": "congue risus semper porta volutpat quam pede lobortis ligula sit amet eleifend pede libero quis orci nullam molestie nibh in lectus",
-    "studio": "Waters and Sons"
+    "studio": "Waters and Sons",
+    "price": 99.99
   },
   {
     "id": 13,
@@ -114,7 +126,8 @@
     "cover": "http://dummyimage.com/300x300.png/cc0000/ffffff",
     "createdAt": "05/31/1995",
     "description": "habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt lacus at velit vivamus vel nulla eget eros elementum pellentesque quisque",
-    "studio": "Gleichner-Price"
+    "studio": "Gleichner-Price",
+    "price": 99.99
   },
   {
     "id": 14,
@@ -123,7 +136,8 @@
     "cover": "http://dummyimage.com/300x300.png/5fa2dd/ffffff",
     "createdAt": "08/01/2004",
     "description": "eu massa donec dapibus duis at velit eu est congue elementum in hac habitasse platea dictumst morbi vestibulum velit id pretium iaculis diam erat fermentum justo nec condimentum",
-    "studio": "Gottlieb, Macejkovic and Casper"
+    "studio": "Gottlieb, Macejkovic and Casper",
+    "price": 99.99
   },
   {
     "id": 15,
@@ -132,7 +146,8 @@
     "cover": "http://dummyimage.com/300x300.png/cc0000/ffffff",
     "createdAt": "07/23/2001",
     "description": "aliquam convallis nunc proin at turpis a pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in",
-    "studio": "Goldner and Sons"
+    "studio": "Goldner and Sons",
+    "price": 99.99
   },
   {
     "id": 16,
@@ -141,7 +156,8 @@
     "cover": "http://dummyimage.com/300x300.png/ff4444/ffffff",
     "createdAt": "02/12/1995",
     "description": "cras non velit nec nisi vulputate nonummy maecenas tincidunt lacus at velit vivamus vel nulla eget eros elementum pellentesque quisque porta volutpat erat quisque erat eros viverra eget congue eget semper rutrum nulla nunc purus phasellus in felis",
-    "studio": "Conroy and Sons"
+    "studio": "Conroy and Sons",
+    "price": 99.99
   },
   {
     "id": 17,
@@ -150,7 +166,8 @@
     "cover": "http://dummyimage.com/300x300.png/cc0000/ffffff",
     "createdAt": "08/30/2005",
     "description": "lacinia eget tincidunt eget tempus vel pede morbi porttitor lorem id ligula suspendisse ornare consequat lectus in est risus auctor sed tristique in tempus sit amet sem fusce consequat nulla nisl nunc nisl",
-    "studio": "Greenholt, Kreiger and Fahey"
+    "studio": "Greenholt, Kreiger and Fahey",
+    "price": 99.99
   },
   {
     "id": 18,
@@ -159,7 +176,8 @@
     "cover": "http://dummyimage.com/300x300.png/5fa2dd/ffffff",
     "createdAt": "06/06/2010",
     "description": "turpis adipiscing lorem vitae mattis nibh ligula nec sem duis aliquam convallis nunc proin at turpis a pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum",
-    "studio": "MacGyver-Hills"
+    "studio": "MacGyver-Hills",
+    "price": 99.99
   },
   {
     "id": 19,
@@ -168,7 +186,8 @@
     "cover": "http://dummyimage.com/300x300.png/ff4444/ffffff",
     "createdAt": "03/11/2009",
     "description": "non lectus aliquam sit amet diam in magna bibendum imperdiet nullam orci pede venenatis non sodales sed tincidunt eu felis fusce posuere felis sed lacus morbi sem mauris laoreet",
-    "studio": "Gerhold, Bruen and Crooks"
+    "studio": "Gerhold, Bruen and Crooks",
+    "price": 99.99
   },
   {
     "id": 20,
@@ -177,7 +196,8 @@
     "cover": "http://dummyimage.com/300x300.png/cc0000/ffffff",
     "createdAt": "12/27/2012",
     "description": "ac nibh fusce lacus purus aliquet at feugiat non pretium quis lectus suspendisse potenti in eleifend quam a odio in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie lorem quisque ut",
-    "studio": "Funk Group"
+    "studio": "Funk Group",
+    "price": 99.99
   },
   {
     "id": 21,
@@ -186,7 +206,8 @@
     "cover": "http://dummyimage.com/300x300.png/5fa2dd/ffffff",
     "createdAt": "03/20/2011",
     "description": "quisque erat eros viverra eget congue eget semper rutrum nulla nunc purus phasellus in felis donec semper sapien a libero nam dui proin leo odio porttitor id consequat in consequat ut nulla sed accumsan felis ut at dolor quis odio",
-    "studio": "Marquardt Group"
+    "studio": "Marquardt Group",
+    "price": 99.99
   },
   {
     "id": 22,
@@ -195,7 +216,8 @@
     "cover": "http://dummyimage.com/300x300.png/ff4444/ffffff",
     "createdAt": "06/05/2000",
     "description": "platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt ante vel ipsum praesent blandit lacinia erat vestibulum sed magna at nunc commodo placerat praesent blandit nam nulla integer",
-    "studio": "Becker, McGlynn and Boyer"
+    "studio": "Becker, McGlynn and Boyer",
+    "price": 99.99
   },
   {
     "id": 23,
@@ -204,7 +226,8 @@
     "cover": "http://dummyimage.com/300x300.png/cc0000/ffffff",
     "createdAt": "11/15/2014",
     "description": "amet eleifend pede libero quis orci nullam molestie nibh in lectus pellentesque at nulla suspendisse potenti cras in purus eu magna vulputate luctus cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus",
-    "studio": "Mills Group"
+    "studio": "Mills Group",
+    "price": 99.99
   },
   {
     "id": 24,
@@ -213,7 +236,8 @@
     "cover": "http://dummyimage.com/300x300.png/ff4444/ffffff",
     "createdAt": "08/18/2003",
     "description": "in imperdiet et commodo vulputate justo in blandit ultrices enim lorem ipsum dolor sit amet consectetuer adipiscing elit proin interdum mauris non ligula pellentesque ultrices phasellus id sapien in sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at vulputate",
-    "studio": "Koss-Douglas"
+    "studio": "Koss-Douglas",
+    "price": 99.99
   },
   {
     "id": 25,
@@ -222,7 +246,8 @@
     "cover": "http://dummyimage.com/300x300.png/5fa2dd/ffffff",
     "createdAt": "05/04/2000",
     "description": "orci nullam molestie nibh in lectus pellentesque at nulla suspendisse potenti cras in purus eu magna vulputate luctus cum sociis natoque penatibus et magnis",
-    "studio": "Jacobs-Heaney"
+    "studio": "Jacobs-Heaney",
+    "price": 99.99
   },
   {
     "id": 26,
@@ -231,7 +256,8 @@
     "cover": "http://dummyimage.com/300x300.png/dddddd/000000",
     "createdAt": "09/09/1991",
     "description": "tincidunt eget tempus vel pede morbi porttitor lorem id ligula suspendisse ornare consequat lectus in est risus auctor sed tristique in tempus",
-    "studio": "Spencer LLC"
+    "studio": "Spencer LLC",
+    "price": 99.99
   },
   {
     "id": 27,
@@ -240,7 +266,8 @@
     "cover": "http://dummyimage.com/300x300.png/ff4444/ffffff",
     "createdAt": "01/10/2015",
     "description": "scelerisque mauris sit amet eros suspendisse accumsan tortor quis turpis sed ante vivamus tortor duis mattis egestas metus aenean fermentum donec ut mauris eget massa tempor convallis nulla",
-    "studio": "Tremblay-Hegmann"
+    "studio": "Tremblay-Hegmann",
+    "price": 99.99
   },
   {
     "id": 28,
@@ -249,7 +276,8 @@
     "cover": "http://dummyimage.com/300x300.png/cc0000/ffffff",
     "createdAt": "03/18/2023",
     "description": "ac tellus semper interdum mauris ullamcorper purus sit amet nulla quisque arcu libero rutrum ac lobortis vel dapibus at diam",
-    "studio": "Gibson, Hegmann and Schmitt"
+    "studio": "Gibson, Hegmann and Schmitt",
+    "price": 99.99
   },
   {
     "id": 29,
@@ -258,7 +286,8 @@
     "cover": "http://dummyimage.com/300x300.png/cc0000/ffffff",
     "createdAt": "05/18/2006",
     "description": "duis bibendum morbi non quam nec dui luctus rutrum nulla tellus in sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet at feugiat",
-    "studio": "Kreiger Inc"
+    "studio": "Kreiger Inc",
+    "price": 99.99
   },
   {
     "id": 30,
@@ -267,6 +296,7 @@
     "cover": "http://dummyimage.com/300x300.png/dddddd/000000",
     "createdAt": "10/22/1990",
     "description": "justo etiam pretium iaculis justo in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt",
-    "studio": "Grant Inc"
+    "studio": "Grant Inc",
+    "price": 99.99
   }
 ]
