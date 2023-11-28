@@ -12,6 +12,7 @@ const Main = ({ children, ...rest }: MainProps) => {
         pt-20
         w-full
         min-h-screen
+        max-h-screen
         flex
         flex-col
         justify-start
@@ -19,6 +20,7 @@ const Main = ({ children, ...rest }: MainProps) => {
         bg-zinc-200
         gap-4
         p-4
+        overflow-y-scroll
         ${rest.className}
       `}
     >

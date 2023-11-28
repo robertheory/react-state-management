@@ -40,7 +40,7 @@ const Searchbar = ({ handleCloseMenu }: SearchbarProps) => {
       >
         <input
           type='text'
-          placeholder='Pesquisar'
+          placeholder='Search...'
           className='
         w-full h-full bg-transparent text-white
         outline-none placeholder-white placeholder-opacity-50'

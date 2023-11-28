@@ -10,11 +10,11 @@ const MovieCard = ({ movie }: MovieCardProps) => {
   const navigate = useNavigate();
 
   const handleAddToCart = () => {
-    alert('Adicionando ao carrinho...');
+    alert('Added to cart...');
   };
 
-  const handleAddToWishlist = () => {
-    alert('Adicionando à lista de desejos...');
+  const handleAddToFavorites = () => {
+    alert('Added to favorites...');
   };
 
   return (
@@ -68,6 +68,8 @@ const MovieCard = ({ movie }: MovieCardProps) => {
           onClick={() => navigate(`/movie/${movie.id}`)}
           className='
         w-full
+        text-center
+        text-sm
         bg-zinc-800
         text-zinc-400
         font-bold
@@ -77,7 +79,7 @@ const MovieCard = ({ movie }: MovieCardProps) => {
         hover:text-zinc-500
       '
         >
-          Ver mais
+          More
         </button>
 
         <button
@@ -97,7 +99,7 @@ const MovieCard = ({ movie }: MovieCardProps) => {
         </button>
 
         <button
-          onClick={handleAddToWishlist}
+          onClick={handleAddToFavorites}
           className='
             w-fit
             bg-zinc-800

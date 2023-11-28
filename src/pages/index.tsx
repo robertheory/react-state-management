@@ -10,7 +10,7 @@ const Home = () => {
 
       <Main>
         <h1 className='text-3xl font-bold text-center'>
-          Os melhores filmes de todos os tempos, você encontra aqui!
+          The best movies of all time
         </h1>
 
         <div
