@@ -1,10 +1,9 @@
-import { useSelector } from 'react-redux';
 import Layout from '../../components/Layout';
 import MovieCard from '../../components/MovieCard';
-import { getFavorites } from '../../store/favoritesSlice';
+import { useFavoritesStore } from '../../store/favoritesSlice';
 
 const Favorites = () => {
-  const favorites = useSelector(getFavorites());
+  const { favorites } = useFavoritesStore();
 
   return (
     <Layout>

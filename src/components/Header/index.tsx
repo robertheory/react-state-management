@@ -1,8 +1,7 @@
 import { useState } from 'react';
 import { FiMenu, FiShoppingCart, FiX } from 'react-icons/fi';
-import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { getTotal } from '../../store/cartSlice';
+import { useCartStore } from '../../store/cartSlice';
 import Nav from './Nav';
 import Searchbar from './Searchbar';
 
@@ -11,7 +10,9 @@ const Header = () => {
 
   const navigate = useNavigate();
 
-  const cartItems = useSelector(getTotal());
+  const { cart } = useCartStore();
+
+  const totalCartItems = cart.reduce((acc, item) => acc + item.quantity, 0);
 
   return (
     <header
@@ -55,7 +56,7 @@ const Header = () => {
             active:bg-gray-900
           '
           >
-            {cartItems > 0 && (
+            {totalCartItems > 0 && (
               <span
                 className='
                 absolute
@@ -72,7 +73,7 @@ const Header = () => {
                 md:right-6
                 '
               >
-                {cartItems}
+                {totalCartItems}
               </span>
             )}
 

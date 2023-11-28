@@ -1,18 +1,13 @@
 import { FiMinus, FiPlus, FiTrash2 } from 'react-icons/fi';
-import { useDispatch } from 'react-redux';
 import { CartItem } from '../../interfaces';
-import {
-  addToCart,
-  deleteFromCart,
-  removeFromCart,
-} from '../../store/cartSlice';
+import { useCartStore } from '../../store/cartSlice';
 
 type CartItemProps = {
   item: CartItem;
 };
 
 const CartItemCard = ({ item }: CartItemProps) => {
-  const dispatch = useDispatch();
+  const { addToCart, removeFromCart, deleteFromCart } = useCartStore();
 
   const price = new Intl.NumberFormat('en-US', {
     style: 'currency',
@@ -50,10 +45,7 @@ const CartItemCard = ({ item }: CartItemProps) => {
                 p-2 gap-2 rounded-md
         '
           >
-            <button
-              type='button'
-              onClick={() => dispatch(removeFromCart(item.movie))}
-            >
+            <button type='button' onClick={() => removeFromCart(item.movie)}>
               <FiMinus />
             </button>
 
@@ -65,10 +57,7 @@ const CartItemCard = ({ item }: CartItemProps) => {
               {item.quantity}
             </span>
 
-            <button
-              type='button'
-              onClick={() => dispatch(addToCart(item.movie))}
-            >
+            <button type='button' onClick={() => addToCart(item.movie)}>
               <FiPlus />
             </button>
           </div>
@@ -77,7 +66,7 @@ const CartItemCard = ({ item }: CartItemProps) => {
 
           <button
             type='button'
-            onClick={() => dispatch(deleteFromCart(item.movie))}
+            onClick={() => deleteFromCart(item.movie)}
             className='
                 w-8 h-8 flex flex-row justify-center items-center
                 rounded-md

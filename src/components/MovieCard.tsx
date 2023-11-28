@@ -1,9 +1,8 @@
 import { FiHeart, FiShoppingCart } from 'react-icons/fi';
-import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { Movie } from '../interfaces';
-import { addToCart } from '../store/cartSlice';
-import { getFavorites, toggleFavorite } from '../store/favoritesSlice';
+import { useCartStore } from '../store/cartSlice';
+import { useFavoritesStore } from '../store/favoritesSlice';
 
 type MovieCardProps = {
   movie: Movie;
@@ -11,18 +10,18 @@ type MovieCardProps = {
 
 const MovieCard = ({ movie }: MovieCardProps) => {
   const navigate = useNavigate();
-  const dispatch = useDispatch();
 
-  const favorites = useSelector(getFavorites());
+  const { favorites, toggleFavorite } = useFavoritesStore();
+  const { addToCart } = useCartStore();
 
   const isFavorite = !!favorites.find((fav) => fav.id === movie.id);
 
   const handleAddToCart = () => {
-    dispatch(addToCart(movie));
+    addToCart(movie);
   };
 
   const handleAddToFavorites = () => {
-    dispatch(toggleFavorite(movie));
+    toggleFavorite(movie);
   };
 
   const price = new Intl.NumberFormat('en-US', {
