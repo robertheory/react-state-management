@@ -16,7 +16,7 @@ const Nav = ({ handleCloseMenu }: NavProps) => {
       <a href='/' onClick={() => handleCloseMenu()}>
         Filmes
       </a>
-      <a href='/my-list' onClick={() => handleCloseMenu()}>
+      <a href='/favorites' onClick={() => handleCloseMenu()}>
         Minha Lista
       </a>
     </nav>
