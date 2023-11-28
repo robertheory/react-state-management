@@ -1,6 +1,5 @@
 import { useParams } from 'react-router-dom';
-import Header from '../../components/Header';
-import Main from '../../components/Main';
+import Layout from '../../components/Layout';
 import movies from '../../data/movies.json';
 
 const Movie = () => {
@@ -23,12 +22,9 @@ const Movie = () => {
   });
 
   return (
-    <>
-      <Header />
-
-      <Main>
-        <div
-          className='
+    <Layout>
+      <div
+        className='
           w-full
           max-w-screen-lg
           flex
@@ -38,13 +34,13 @@ const Movie = () => {
           gap-4
           p-4
         '
-        >
-          <h1 className='text-2xl font-bold text-center'>
-            {movie.title} ({date})
-          </h1>
+      >
+        <h1 className='text-2xl font-bold text-center'>
+          {movie.title} ({date})
+        </h1>
 
-          <div
-            className='
+        <div
+          className='
             flex
             gap-2
             text-sm
@@ -52,22 +48,21 @@ const Movie = () => {
             text-zinc-800
             uppercase
         '
-          >
-            {genres.map((genre) => (
-              <span key={genre}>{genre}</span>
-            ))}
-          </div>
-          <img
-            className='w-64 h-96 object-cover'
-            src={movie.cover}
-            alt={movie.title}
-          />
-
-          <p className='text-lg font-bold'>Overview</p>
-          <p className='text-lgtext-justify'>{movie.description}</p>
+        >
+          {genres.map((genre) => (
+            <span key={genre}>{genre}</span>
+          ))}
         </div>
-      </Main>
-    </>
+        <img
+          className='w-64 h-96 object-cover'
+          src={movie.cover}
+          alt={movie.title}
+        />
+
+        <p className='text-lg font-bold'>Overview</p>
+        <p className='text-lgtext-justify'>{movie.description}</p>
+      </div>
+    </Layout>
   );
 };
 

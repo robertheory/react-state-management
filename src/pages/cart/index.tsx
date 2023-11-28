@@ -1,11 +1,11 @@
 import Layout from '../../components/Layout';
 
-const Favorites = () => {
+const Cart = () => {
   return (
     <Layout>
-      <h1>Meus favoritos</h1>
+      <h1>Carrinho</h1>
     </Layout>
   );
 };
 
-export default Favorites;
+export default Cart;

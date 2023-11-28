@@ -1,10 +1,13 @@
 import { useState } from 'react';
 import { FiMenu, FiShoppingCart, FiX } from 'react-icons/fi';
+import { useNavigate } from 'react-router-dom';
 import Nav from './Nav';
 import Searchbar from './Searchbar';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const navigate = useNavigate();
 
   const cartItems = 20;
 
@@ -43,6 +46,7 @@ const Header = () => {
           <Searchbar handleCloseMenu={() => setIsMenuOpen(false)} />
 
           <button
+            onClick={() => navigate('/cart')}
             className='
             w-10 h-10 flex justify-center items-center p-2
             hover:bg-gray-700 rounded-lg
