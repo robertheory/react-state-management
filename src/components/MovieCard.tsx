@@ -1,13 +1,9 @@
 import { FiHeart, FiShoppingCart } from 'react-icons/fi';
 import { useNavigate } from 'react-router-dom';
+import { Movie } from '../interfaces';
 
 type MovieCardProps = {
-  movie: {
-    id: number;
-    title: string;
-    genre: string;
-    cover: string;
-  };
+  movie: Movie;
 };
 
 const MovieCard = ({ movie }: MovieCardProps) => {
