@@ -1,4 +1,5 @@
 import { FiHeart, FiShoppingCart } from 'react-icons/fi';
+import { useNavigate } from 'react-router-dom';
 
 type MovieCardProps = {
   movie: {
@@ -10,6 +11,8 @@ type MovieCardProps = {
 };
 
 const MovieCard = ({ movie }: MovieCardProps) => {
+  const navigate = useNavigate();
+
   const handleAddToCart = () => {
     alert('Adicionando ao carrinho...');
   };
@@ -66,6 +69,7 @@ const MovieCard = ({ movie }: MovieCardProps) => {
       '
       >
         <button
+          onClick={() => navigate(`/movie/${movie.id}`)}
           className='
         w-full
         bg-zinc-800

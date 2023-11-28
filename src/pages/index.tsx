@@ -1,4 +1,5 @@
 import Header from '../components/Header';
+import Main from '../components/Main';
 import MovieCard from '../components/MovieCard';
 import movies from '../data/movies.json';
 
@@ -7,19 +8,7 @@ const Home = () => {
     <>
       <Header />
 
-      <main
-        className='
-        pt-20
-        w-full
-        min-h-screen
-        flex
-        flex-col
-        justify-start
-        items-center
-        bg-zinc-200
-        gap-4
-      '
-      >
+      <Main>
         <h1 className='text-3xl font-bold text-center'>
           Os melhores filmes de todos os tempos, você encontra aqui!
         </h1>
@@ -40,7 +29,7 @@ const Home = () => {
             <MovieCard key={movie.id} movie={movie} />
           ))}
         </div>
-      </main>
+      </Main>
     </>
   );
 };
