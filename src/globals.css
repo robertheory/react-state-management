@@ -4,7 +4,6 @@
 
 body,
 html {
-  width: 100vw;
   font-family: 'Roboto', sans-serif;
   scroll-behavior: smooth;
 }
