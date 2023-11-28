@@ -1,6 +1,7 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import { persistReducer, persistStore } from 'redux-persist';
-import storage from 'redux-persist/lib/storage'; // defaults to localStorage for web
+import storage from 'redux-persist/lib/storage';
+import cart from './cartSlice';
 import favorites from './favoritesSlice';
 
 const persistConfig = {
@@ -9,7 +10,8 @@ const persistConfig = {
 };
 
 const rootReducer = combineReducers({
-  favorites: favorites,
+  favorites,
+  cart,
 });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);

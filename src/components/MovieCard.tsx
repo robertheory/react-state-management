@@ -2,6 +2,7 @@ import { FiHeart, FiShoppingCart } from 'react-icons/fi';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { Movie } from '../interfaces';
+import { addToCart } from '../store/cartSlice';
 import { getFavorites, toggleFavorite } from '../store/favoritesSlice';
 
 type MovieCardProps = {
@@ -17,7 +18,7 @@ const MovieCard = ({ movie }: MovieCardProps) => {
   const isFavorite = !!favorites.find((fav) => fav.id === movie.id);
 
   const handleAddToCart = () => {
-    // alert('Added to cart...');
+    dispatch(addToCart(movie));
   };
 
   const handleAddToFavorites = () => {

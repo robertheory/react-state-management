@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { FiMenu, FiShoppingCart, FiX } from 'react-icons/fi';
+import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
+import { getTotal } from '../../store/cartSlice';
 import Nav from './Nav';
 import Searchbar from './Searchbar';
 
@@ -9,7 +11,7 @@ const Header = () => {
 
   const navigate = useNavigate();
 
-  const cartItems = 20;
+  const cartItems = useSelector(getTotal());
 
   return (
     <header
