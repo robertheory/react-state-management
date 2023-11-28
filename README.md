@@ -1,30 +1,39 @@
-# React + TypeScript + Vite
+# React State Management 101
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+In this project i will be exploring the different ways to manage a global state in a react application with the help of the following libraries:
 
-Currently, two official plugins are available:
+- [Redux](https://redux.js.org/)
+- [Zustand](https://github.com/pmndrs/zustand)
+- [React Context](https://react.dev/reference/react/createContext)
+- [Recoil](https://recoiljs.org/)
+- [Mobx](https://mobx.js.org/README.html)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Getting Started
 
-## Expanding the ESLint configuration
+### Prerequisites
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- [Node.js](https://nodejs.org/en/)
+- [Yarn](https://yarnpkg.com/)
+- [Git](https://git-scm.com/)
 
-- Configure the top-level `parserOptions` property like this:
+### Installation
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+1. Clone the repo
+
+```sh
+git clone
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Install packages
+
+```sh
+yarn
+```
+
+3. Run the app
+
+```sh
+yarn dev
+```
+
+4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
