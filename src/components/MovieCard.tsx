@@ -25,6 +25,11 @@ const MovieCard = ({ movie }: MovieCardProps) => {
     dispatch(toggleFavorite(movie));
   };
 
+  const price = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+  }).format(movie.price);
+
   return (
     <div
       className='
@@ -72,23 +77,7 @@ const MovieCard = ({ movie }: MovieCardProps) => {
       gap-4
       '
       >
-        <button
-          onClick={() => navigate(`/movie/${movie.id}`)}
-          className='
-            w-full
-            text-center
-            text-sm
-            bg-zinc-800
-            text-white
-            font-bold
-            rounded-md
-            p-2
-            hover:bg-zinc-900
-            hover:text-zinc-500
-      '
-        >
-          More
-        </button>
+        <span className='text-lg font-bold mr-auto'>Price: {price}</span>
 
         <button
           onClick={handleAddToCart}
@@ -136,6 +125,24 @@ const MovieCard = ({ movie }: MovieCardProps) => {
           />
         </button>
       </div>
+
+      <button
+        onClick={() => navigate(`/movie/${movie.id}`)}
+        className='
+            w-full
+            text-center
+            text-sm
+            bg-zinc-800
+            text-white
+            font-bold
+            rounded-md
+            p-2
+            hover:bg-zinc-900
+            hover:text-zinc-500
+      '
+      >
+        More
+      </button>
     </div>
   );
 };
