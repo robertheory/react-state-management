@@ -22,9 +22,11 @@ const Favorites = () => {
             p-8
         '
       >
-        {favorites.map((movie) => (
-          <MovieCard key={movie.id} movie={movie} />
-        ))}
+        {favorites.length === 0 ? (
+          <p>You don't have any favorite movies</p>
+        ) : (
+          favorites.map((movie) => <MovieCard key={movie.id} movie={movie} />)
+        )}
       </div>
     </Layout>
   );

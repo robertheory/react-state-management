@@ -10,9 +10,13 @@ const Cart = () => {
     <Layout>
       <h1>Cart</h1>
 
-      {cartItems.map((item) => (
-        <CartItemCard key={item.movie.id} item={item} />
-      ))}
+      {cartItems.length === 0 ? (
+        <p>Your cart is empty</p>
+      ) : (
+        cartItems.map((item) => (
+          <CartItemCard key={item.movie.id} item={item} />
+        ))
+      )}
     </Layout>
   );
 };
